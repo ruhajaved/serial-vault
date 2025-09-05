@@ -16,6 +16,9 @@ LDFLAGS += -X github.com/CanonicalLtd/serial-vault/config.revision=$(GIT_REVISIO
 # This will make the linked C part also static into the binary (can produce some warnings)
 LDFLAGS_STATIC += $(LDFLAGS) -linkmode external -extldflags -static
 
+# skip warning: "sqlite3-binding.c: In function ‘sqlite3SelectNew’" in go-sqlite3
+export CGO_CFLAGS += -Wno-return-local-addr
+
 GOFLAGS=-mod=vendor
 # make sure we use built-in net package and not the system’s one
 GOTAGS=-tags netgo
