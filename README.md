@@ -30,12 +30,12 @@ NEVER set this configuration in production environments.
 
 ## Install from Source
 If you have a Go development environment set up, we recommend at least Go v1.13 or higher. This project is built
-and tested on `Ubuntu 16.04.7 LTS (Xenial Xerus)` with `go 1.13`. If you wish to build or run the service from source we
+and tested on `Ubuntu 22.04 LTS (Jammy Jellyfish)` with `go 1.22.6` (`go` snap revision 10679). If you wish to build or run the service from source we
 recommend using LXD container for this purpose. To get started with LXD, please follow this 
 [wiki](https://wiki.canonical.com/UbuntuOne/Developer/LXC) (jump to the LXD section):
 
   ```bash
-  lxc launch ubuntu:16.04 serial-vault -p default -p $USER
+  lxc launch ubuntu:22.04 serial-vault -p default -p $USER
   lxc ls
   ssh -A <container-ip>
   serial-vault:~$ git clone https://github.com/canonical/serial-vault.git
