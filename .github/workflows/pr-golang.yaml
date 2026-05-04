@@ -3,10 +3,10 @@ on: [pull_request]
 jobs:
   build:
     name: Test
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
     - name: Set up Go
-      uses: actions/setup-go@v1
+      uses: actions/setup-go@v5
       with:
         go-version: 1.22.5
       id: go
@@ -20,10 +20,10 @@ jobs:
       run: make unit-test
   lint:
     name: Lint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
     - name: Set up Go
-      uses: actions/setup-go@v1
+      uses: actions/setup-go@v5
       with:
         go-version: 1.22.5
       id: go
