@@ -29,7 +29,7 @@ in order to changes take effect. That could require a browser restart.
 NEVER set this configuration in production environments.
 
 ## Install from Source
-If you have a Go development environment set up, we recommend at least Go v1.13 or higher. This project is built
+If you have a Go development environment set up, we recommend at least Go v1.22 or higher. This project is built
 and tested on `Ubuntu 22.04 LTS (Jammy Jellyfish)` with `go 1.22.6` (`go` snap revision 10679). If you wish to build or run the service from source we
 recommend using LXD container for this purpose. To get started with LXD, please follow this 
 [wiki](https://wiki.canonical.com/UbuntuOne/Developer/LXC) (jump to the LXD section):

@@ -1,6 +1,6 @@
 module github.com/CanonicalLtd/serial-vault
 
-go 1.18
+go 1.22
 
 require (
 	github.com/Masterminds/squirrel v1.2.0
